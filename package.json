@@ -1,6 +1,6 @@
 {
   "name": "@smarteattech/ui",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -43,7 +43,8 @@
   },
   "homepage": "https://github.com/smarteattech/smarteattech-ui#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
@@ -147,5 +148,8 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "react-native-reanimated": "^2.10.0"
   }
 }

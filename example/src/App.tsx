@@ -1,18 +1,16 @@
+import { Card } from '@smarteattech/ui';
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from '@smarteattech/ui';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
 
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Card title='Hello' show>
+        <Text>Hello, world</Text>
+      </Card>
     </View>
   );
 }
